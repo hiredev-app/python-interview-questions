@@ -60,9 +60,11 @@ questions:
 
   - title: Is there something wrong about the following code?
     body: |
+      ```python3
       f = open('requirements.txt', 'r+')
       requirements = f.read()
       f.close()
+      ```
     type: full_text
 
   - title: What does the following code print?
@@ -84,12 +86,14 @@ questions:
   - title: What does the following code print?
     type: single_choice
     body: |
+      ```python3
       x = ["red", "blue", "green", "gray"]
       y = {i: j for i, j in enumerate(x, 2)}
       print([x for x in y])
+      ```
     options:
-      - value: \[2, 3, 4, 5]
+      - value: "[2, 3, 4, 5]"
         correct: true
-      - value: \[1, 2, 3, 4]
-      - value: \[0, 1, 2, 3]
+      - value: "[1, 2, 3, 4]"
+      - value: "[0, 1, 2, 3]"
 
