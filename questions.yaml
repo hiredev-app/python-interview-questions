@@ -1,53 +1,95 @@
-# yaml-language-server: $schema=https://webscope-hiring.herokuapp.com/api/questions-schema/
+# yaml-language-server: $schema=https://api.hire.dev/questions-schema/
 questions:
+  - title: Briefly describe how Python works
+    hint: Is is single-threaded? Interpreted? How does typing work? etc.
+    type: full_text
+
   # This is an example of a single choice question
-  - title: Who was the captain in the first pilot episode of the original Star Trek Series?
-    type: single_choice
-    hint: His name rhymes with "bike"
-    options:
-      - value: Captain America
-        correct: true
-      - value: Christopher Pike
-        correct: true
-      - value: This is a new answer
-      - value: Christopher Columbus
-    body: |
-      Here is some JavaScript code:
-      ~~~js
-      console.log('It works!');
-      ~~~
-
-      And here is another:
-
-      ~~~js
-      console.log('It works again!');
-      ~~~
-    # This is an example of a multi choice question
-  - title: Which of these characters from Game of Thrones series died?
+  - title: Which of the following data types are immutable?
     type: multi_choice
-    hint: There was a lot of dying...
     options:
-      - value: Sersei Lannister
+      - value: int
         correct: true
-      - value: Robb Stark
+      - value: list
+      - value: dict
+      - value: set
+      - value: bool
         correct: true
-      - value: Hodor
+      - value: tuple
+        correct: true
 
-  # This is an example of a full-text question (answers for full-text-questions are optional)
-  - title: If you store a pokemon in a PC does it become a digimon?
+  - title: What is a definition of a `tuple` in Python?
     type: full_text
 
-  # This is an example of a question with body
-  - title: If you store a pokemon in a PC does it become a digimon?
+  - title: Implement reverse_array lambda function so that it reverses an array
     type: full_text
     body: |
-      Here is some JavaScript code:
-      ~~~js
-      console.log('It works!')
-      ~~~
+      ```python3
+      reverse_array = lambda x: # fill in the implementation
+      ```
 
-      And here is another:
+  - title: Implement unique_array lambda function so that it remove duplicate elements from the array
+    type: full_text
+    body: |
+      ```python3
+      unique_array = lambda x: # fill in the implementation
+      ```
 
-      ~~~js
-      console.log('It works again!')
-      ~~~
+  - title: What is a `lambda` statement?
+    type: full_text
+
+  - title: Which of the following choices represent a decorator in Python 3?
+    type: multi_choice
+    options:
+      - value: range
+        correct: true
+      - value: list
+      - value: sum
+
+  - title: Which of the following statements are true about generators?
+    type: multi_choice
+    options:
+      - value: They store all the values in a memory
+      - value: They are iterators
+        correct: true
+      - value: They can use `yield` keyword
+        correct: true
+
+  - title: What is the purpose of *args and **kwargs? What is the difference?
+    type: full_text
+
+  - title: Is there something wrong about the following code?
+    body: |
+      f = open('requirements.txt', 'r+')
+      requirements = f.read()
+      f.close()
+    type: full_text
+
+  - title: What does the following code print?
+    type: single_choice
+    body: |
+      ```python3
+      print([x for x in range(10) if x % 2 == 0])
+      ```
+    options:
+      - value: 2, 4, 6, 8, 10
+      - value: 2, 4, 6, 8
+      - value: 0, 2, 4, 6, 8, 10
+      - value: 0, 2, 4, 6, 8
+        correct: true
+
+  - title: What are coroutines?
+    type: full_text
+
+  - title: What does the following code print?
+    type: single_choice
+    body: |
+      x = ["red", "blue", "green", "gray"]
+      y = {i: j for i, j in enumerate(x, 2)}
+      print([x for x in y])
+    options:
+      - value: \[2, 3, 4, 5]
+        correct: true
+      - value: \[1, 2, 3, 4]
+      - value: \[0, 1, 2, 3]
+
