@@ -3,37 +3,107 @@
 
 ## Questions
 
-<details><summary>Briefly describe how Python works</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i>
-<i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hint: Is is single-threaded? Interpreted? How does typing work? etc.</i><p></p><p></p></details>
+<details>
+<summary>Briefly describe how Python works | <i>✎ Full text answer</i></summary>
 
-<details><summary>Which of the following data types are immutable?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ int</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ list</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ dict</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ set</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ bool</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ tuple</p><p></p></details>
+ > 💡 Hint: Is is single-threaded? Interpreted? How does typing work? etc.
 
-<details><summary>What is a definition of a `tuple` in Python?</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
+</details>
 
-<details><summary>Implement reverse_array lambda function so that it reverses an array</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
+<details>
+<summary>Which of the following data types are immutable? | <i>Multi choice answer</i></summary>
 
-<details><summary>Implement unique_array lambda function so that it remove duplicate elements from the array</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
+- [x] int
+- [ ] list
+- [ ] dict
+- [ ] set
+- [x] bool
+- [x] tuple</details>
 
-<details><summary>What is a `lambda` statement?</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
+<details>
+<summary>What is a definition of a `tuple` in Python? | <i>✎ Full text answer</i></summary>
 
-<details><summary>Which of the following choices represent a decorator in Python 3?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ range</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ list</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ sum</p><p></p></details>
+</details>
 
-<details><summary>Which of the following statements are true about generators?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☐ They store all the values in a memory</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ They are iterators</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☒ They can use `yield` keyword</p><p></p></details>
+<details>
+<summary>Implement reverse_array lambda function so that it reverses an array | <i>✎ Full text answer</i></summary>
 
-<details><summary>What is the purpose of *args and **kwargs? What is the difference?</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
 
-<details><summary>Is there something wrong about the following code?</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
+```python3
+reverse_array = lambda x: # fill in the implementation
+```
+</details>
 
-<details><summary>What does the following code print?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ 2, 4, 6, 8, 10</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ 2, 4, 6, 8</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ 0, 2, 4, 6, 8, 10</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◉ 0, 2, 4, 6, 8</p><p></p></details>
+<details>
+<summary>Implement unique_array lambda function so that it remove duplicate elements from the array | <i>✎ Full text answer</i></summary>
 
-<details><summary>What are coroutines?</summary>
-<p></p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;✎  Full Text Answer</i><p></p><p></p></details>
 
-<details><summary>What does the following code print?</summary><p></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◉ [2, 3, 4, 5]</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ [1, 2, 3, 4]</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;◯ [0, 1, 2, 3]</p><p></p></details>
+```python3
+unique_array = lambda x: # fill in the implementation
+```
+</details>
+
+<details>
+<summary>What is a `lambda` statement? | <i>✎ Full text answer</i></summary>
+
+</details>
+
+<details>
+<summary>Which of the following choices represent a decorator in Python 3? | <i>Multi choice answer</i></summary>
+
+- [x] range
+- [ ] list
+- [ ] sum</details>
+
+<details>
+<summary>Which of the following statements are true about generators? | <i>Multi choice answer</i></summary>
+
+- [ ] They store all the values in a memory
+- [x] They are iterators
+- [x] They can use `yield` keyword</details>
+
+<details>
+<summary>What is the purpose of *args and **kwargs? What is the difference? | <i>✎ Full text answer</i></summary>
+
+</details>
+
+<details>
+<summary>Is there something wrong about the following code? | <i>✎ Full text answer</i></summary>
+
+
+```python3
+f = open('requirements.txt', 'r+')
+requirements = f.read()
+f.close()
+```
+</details>
+
+<details>
+<summary>What does the following code print? | <i>Single choice answer</i></summary>
+
+- [ ] 2, 4, 6, 8, 10
+- [ ] 2, 4, 6, 8
+- [ ] 0, 2, 4, 6, 8, 10
+- [x] 0, 2, 4, 6, 8
+```python3
+print([x for x in range(10) if x % 2 == 0])
+```
+</details>
+
+<details>
+<summary>What are coroutines? | <i>✎ Full text answer</i></summary>
+
+</details>
+
+<details>
+<summary>What does the following code print? | <i>Single choice answer</i></summary>
+
+- [x] [2, 3, 4, 5]
+- [ ] [1, 2, 3, 4]
+- [ ] [0, 1, 2, 3]
+```python3
+x = ["red", "blue", "green", "gray"]
+y = {i: j for i, j in enumerate(x, 2)}
+print([x for x in y])
+```
+</details>
